@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	display: block;
+	justify-content: center;
+	align-items: center;
+	background: #0a122c;
+}
+
+.imgcontainer{
+	position: relative;
+	width: 1100px;
+	height: auto;
+	margin-bottom: 100px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: -20;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px;
+}
+
+.imgcontainer .card{
+	max-width: 300px;
+	position: relative;
+	height: 215px;
+	background: #fff;
+	margin: 30px 10px;
+	padding: 20px 15px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+	transition: 0.3s ease-in-out;
+}
+
+.imgcontainer .card:hover{
+	height: 420px;
+}
+
+.imgcontainer .card .imgBx{
+	position: relative;
+	width: 260px;
+	height: 260px;
+	top: -60px;
+	left: 20px;
+	z-index: 1;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.imgcontainer .card .imgBx img{
+	max-width: 100%;
+	border-radius: 4px;
+}
+
+.imgcontainer .card .content{
+	position: relative;
+	margin-top: -140px;
+	padding: 10px 15px;
+	text-align: center;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+
+.imgcontainer .card:hover .content{
+	visibility: visible;
+	opacity: 1;
+	margin-top: -40px;
+	transition-delay: 0.3s;
+}
+
+.project-page p{
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: center;
+	font-size: 40px;
+	color: #fff;
+	line-height: 60px;
+	margin-bottom: 35px;
+}
+
+.project-page a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: 2px 1px black;
+}
+
+.project-page span{
+	color: #000;
+	text-shadow: 2px 1px #121212;
+}
+
+div.home{
+	height: 1000px;
+	padding-top: 60px;
+	width: 100%; 
+	background-size: cover;
+}
+
+div.left{
+	width: 50%;
+	float: left;
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 5%;
+	padding-top: 200px;
+}
+
+div.right{
+	width: 50%;
+	float: right;
+	text-align: center;
+	padding-top: 290px;
+}
+
+.imgcontainer a{
+	text-decoration: none;
+}
+
+div.content h2{
+	font-weight: bold;
+	color: #0f2735;
+	font-size: 28px;
+	font-family: 'Ranchers', cursive;
+}
+
+div.content p{
+	color: #153447;
+	font-size: 15px;
+	margin: 10%;
+}
+
+.left h1{
+	color: #fff;
+	font-size: 90px;
+	text-shadow: 5px 5px 10px black;
+}
+
+.left h1 span{
+	color: #909992;
+}
+
+.left h2{
+	color: #909891;
+	font-size: 40px;
+	margin-top: 20px;
+	text-shadow: 2px 5px #0f2735;
+}
+
+.right{
+	padding-right: 5%;
+	padding-left: 3%;
+}
+
+.right p{
+	color: #fff;
+	font-size: 18px;
+}
+
+.right h4{
+	text-align: right;
+	width: 88%;
+	color: #fff;
+	letter-spacing: 5px;
+	padding-bottom: 11px;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-shadow: 2px 1px black;
+}
+
+.text img{
+	padding-top: 10px;
+	width: 17%;
+	display: flex;
+	align-content: right;
+	margin-left: 80%;
+}
+
+.text{
+	width: 90%;
+	border: none;
+	padding: 20px;
+	border-radius: 7px;
+	background-color: rgba(0,0,0,0.1);
+}
+
+
+
+@media (max-width: 991px){
+	.home .pad{
+		padding-top: 330px;
+	}
+
+	.left h1{
+		font-size: 70px;
+		margin-left: -20px;
+		margin-top: -60px;
+	}
+
+	.right p{
+		font-size:16px;
+	}
+
+	.left h2{
+		font-size: 36px;
+	}
+
+	.home{
+		display: inline-block;
+		position: relative;
+	}
+
+	.home .left{
+		width: 100%;
+	}
+
+	.home .right{
+		width: 100%;
+		margin-left: 25%;
+		margin-right: -7%;
+		margin-top: -220px;
+	}
+
+	.imgcontainer{
+		display: block;
+		margin-top: 100px;
+		left: 25%;
+		margin-bottom: -40px;
+		height: auto;
+		right: 25%;
+		margin-left: -70px;
+		margin-right: auto;
+	}
+
+	.imgcontainer .card{
+		margin-bottom: 70px;
+	}
+
+	.project-page p{
+		margin-top: -50px;
+	}
+}

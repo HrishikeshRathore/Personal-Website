@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hrishikesh</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="navstyle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<!--  Navigation Bar Begin  -->
+	
+	<header>
+        <div class="container">
+            <nav>
+                <h1 class="brand"><a href="index.html">Hris<span>hik</span>esh</a></h1>
+                <button class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+	<!--  Navigation Bar End  -->
+
+	<!--  Home Page Begin  -->
+
+	<div class="home">
+		<div class="left">
+			<h1>Hello, I am Hrishi<span>kesh!</span></h1>
+			<h2>A Beginner to Web Development and App Development</h2>
+		</div>
+		<div class="right">
+			<h4>About Me!</h4>
+			<div class="text">
+
+				<p>Hi! I am Hrishikesh Rathore, a web designer/developer focused on crafting great web experiences. Designing and Coding have been my passion since the days I started working with computers but I found myself into web design/development since 2019. I enjoy creating beautifully designed, intuitive and functional websites.
+				</p>
+
+				<p>
+				The development section is really important to me, because I thereby constantly improve my skills and stay up-to-date with new methods and technology. Currently working on Android App Development.
+				</p>
+				<img src="signature.png">
+			</div>
+		
+		</div>
+	</div>
+
+	<!--  Home Page End -->
+
+
+
+	<!--  Projects Begin  -->
+		
+		<div class="imgcontainer">
+			<a href="#1">
+			<div class="card">
+				<div class="imgBx">
+					<img src="img1.jpg">
+				</div>
+				<div class="content">
+					<h2>Card One</h2>
+					<p>Here comes the info for you Project which is present in the Image</p>
+				</div>
+			</div></a>
+
+			<a href="#2">
+			<div class="card">
+				<div class="imgBx">
+					<img src="img2.jpg">
+				</div>
+				<div class="content">
+					<h2>Card Two</h2>
+					<p>Here comes the info for you Project which is present in the Image</p>
+				</div>
+			</div></a>
+
+			<a href="#3">
+			<div class="card">
+				<div class="imgBx">
+					<img src="img3.jpg">
+				</div>
+				<div class="content">
+					<h2>Card Three</h2>
+					<p>Here comes the info for you Project which is present in the Image</p>
+				</div>
+			</div></a>
+
+		</div>
+
+		<div class="project-page">
+			<p>These are my recent work,Check out more work over on <a href="#"><span>></span>Git<span>hub</span><</a></p>
+		</div>
+
+	<!--  Projects End  -->
+
+	<!--  Script for navigation  -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("ul").toggleClass("main");
+                $("div").toggleClass("pad");
+            });
+        });
+    </script>
+
+
+</body>
+</html>
