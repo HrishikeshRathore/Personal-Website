@@ -1,0 +1,114 @@
+
+.left h1{
+	color: #fff;
+	font-size: 90px;
+	text-shadow: 5px 5px 10px black;
+}
+
+.left h1 span{
+	color: #909992;
+}
+
+.left h2{
+	color: #909891;
+	font-size: 40px;
+	margin-top: 20px;
+	text-shadow: 2px 5px #0f2735;
+}
+
+.right{
+	padding-right: 5%;
+	padding-left: 3%;
+}
+
+.right p{
+	color: #fff;
+	font-size: 18px;
+}
+
+.right h4{
+	text-align: right;
+	width: 88%;
+	color: #fff;
+	letter-spacing: 5px;
+	padding-bottom: 11px;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-shadow: 2px 1px black;
+}
+
+.text img{
+	padding-top: 10px;
+	width: 17%;
+	display: flex;
+	align-content: right;
+	margin-left: 80%;
+}
+
+.text{
+	width: 90%;
+	border: none;
+	padding: 20px;
+	border-radius: 7px;
+	background-color: rgba(0,0,0,0.1);
+}
+
+div.home{
+	height: auto;
+	margin-top: 50px;
+	width: 100%; 
+	background-size: cover;
+	z-index: -1;
+}
+
+div.left{
+	width: 50%;
+	float: left;
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 5%;
+	padding-top: 200px;
+}
+
+div.right{
+	width: 50%;
+	float: right;
+	text-align: center;
+	padding-top: 290px;
+}
+
+@media (max-width: 991px){
+	
+	
+
+	.left h1{
+		font-size: 50px;
+		margin-left: -20px;
+	}
+
+	.right p{
+		font-size:16px;
+	}
+
+	.left h2{
+		font-size: 30px;
+	}
+
+	.home{
+		display: inline-block;
+		position: relative;
+	}
+
+	.home .left{
+		margin-top: -100px;
+		width: 100%;
+	}
+
+
+	.home .right{
+		width: 100%;
+		margin-left: 25%;
+		margin-right: -7%;
+		margin-top: -220px;
+	}
+}
