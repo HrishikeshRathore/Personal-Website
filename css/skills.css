@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+h1.skill-head{
+    display: block;
+    color: #fff;
+    font-family: 'Nothing You Could Do', cursive;
+    text-decoration: underline rgb(155, 39, 39);
+    text-shadow: 1px 1px 1px white;
+    font-size: 50px;
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.barcontainer{
+    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    min-height: 500px;
+    background: none;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.barcontainer .card{
+    position: relative;
+    width: 250px;
+    background: linear-gradient(0deg,#0c1e29,#0f2735,#0c1e29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.barcontainer .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.5);
+}
+
+.barcontainer .card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.08);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #0f2735;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.percent .number h2{
+    color:rgb(238, 220, 220);
+    font-weight: 700;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+.card:hover .percent .number h2{
+    color: #fff;
+    font-size: 50px;
+}
+
+.percent .number h2 span{
+    font-size: 24px;
+    color: rgb(238, 220, 220);
+    transition: 0.5s;
+}
+
+.txt{
+    position: relative;
+    color:rgb(238, 220, 220);
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.card:hover .txt{
+    color: #fff;
+}
+
+.card:hover .percent .number h2 span{
+    color: #fff ;
+}
+
+svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px,5px);
+}
+
+svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.card:nth-child(1) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 90) / 100);
+    stroke: #fff;
+}
+
+.card:nth-child(2) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 95) / 100);
+    stroke: #fff;
+}
+
+.card:nth-child(3) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 90) / 100);
+    stroke: #fff;
+}
+
+.card:nth-child(4) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 50) / 100);
+    stroke: #fff;
+}
+
+.card:nth-child(5) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 40) / 100);
+    stroke: #fff;
+}
+
+.card:nth-child(6) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 95) / 100);
+    stroke: #fff;
+}
+
+
+
+@media (max-width:991px){
+
+    .card .txt{
+        color: #fff;
+    }
+    
+    .card .percent .number h2 span{
+        color: #fff ;
+    }
+
+    .card .percent .number h2{
+        color: #fff;
+    }
+    
+    .card{
+        z-index: -1;
+    }
+
+}
