@@ -71,8 +71,7 @@
   
   h1.cont span{
       color:white;
-      font-family: Montserrat', sans-serif;  
-     
+      font-family: 'Montserrat', sans-serif;  
   }
 
   @media screen and (max-width:800px) {
