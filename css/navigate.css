@@ -15,7 +15,7 @@ header{
     width: 100%;
     margin: 0 auto;
 	height: auto;
-    background-image: linear-gradient(to top, rgba(0,0,0,.3), rgba(0,0,0,.3));
+    background-image: linear-gradient(to top, #070D1F,#070D1F);
 }
 
 nav{
@@ -159,20 +159,20 @@ nav ul li a:hover::after{
         top: 0px;
         padding-bottom: 30px;
         transition: 0.5s;
-        background-image: linear-gradient(to top, rgba(0,0,0,.3), rgba(0,0,0,.3));
+        background-image: linear-gradient(to top,#070D1F,#070D1F);
     }
 
     nav ul{
         margin-left: 20%;
         display: none;
-        margin-top: 60px;
+        margin-top: 40px;
 		text-align: center ;
     }
 
     nav ul li{
         padding: 10px;
 		outline: none;
-		overflow: initial;
+        overflow: initial;
     }
 
     button.menu-toggle{
