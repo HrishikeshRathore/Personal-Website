@@ -61,18 +61,17 @@
     color: #fff;
     margin-bottom: 50px;
     display: block;
-    font-family: 'Amatic SC', cursive;
-    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 40px;
     width: 100%;
     text-align: center;
     background-color:  rgba(0, 0, 0, .05);
     border-radius: 500px;
-    text-shadow:1px 1px 2px white;
   }
   
   h1.cont span{
       color:white;
-      font-family: 'Amatic SC', cursive;
+      font-family: Montserrat', sans-serif;  
      
   }
 

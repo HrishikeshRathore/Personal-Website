@@ -145,6 +145,7 @@ nav ul li a:hover::after{
     .brand{
         padding-right: 30px;
         float: right;
+        font-size: 26px;
     }
 
     .container{
@@ -154,19 +155,21 @@ nav ul li a:hover::after{
     nav{
         position: fixed;
         width: 100%;
-        height: calc(200vh-50px);
+        height: calc(100vh-50px);
         display: block;
         top: 0px;
-        padding-bottom: 30px;
+        padding-top: 10px;
+        padding-bottom: 12px;
         transition: 0.5s;
         background-image: linear-gradient(to top,#070D1F,#070D1F);
     }
 
     nav ul{
-        margin-left: 20%;
+        margin-top: 50px;
+        margin-left: 2%;
         display: none;
-        margin-top: 40px;
-		text-align: center ;
+        text-align: center ;
+        padding-right: 20px;
     }
 
     nav ul li{
@@ -175,12 +178,20 @@ nav ul li a:hover::after{
         overflow: initial;
     }
 
+    nav ul li a{
+        font-size: 13px;
+    }
+
     button.menu-toggle{
         display: inline;
         margin-left: 8%;
-        padding-top: 33px;
+        padding-top: 40px;
         border: none;
         outline: none;
+    }
+
+    .menu-toggle{
+        font-size: 28px;
     }
 
     nav ul.main{
